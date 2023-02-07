@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <title>Intro</title>
+    <script>
+        $(document).ready(function(){
+            $('html,body').animate({scrollTop:'3px'},300);
+            $(document).on('touchstart',function(){});
+                $('.start').click(function(){
+                    window.location.href="game.html";
+                })
+            
+        });
+    </script>
+    <style type="text/css">
+        body, section, h1, button {margin: 0; padding: 0;}
+        html, body {width: 100%; height: 100%;}
+        body {overflow: hidden; background: url("images/game2bg.jpg") no-repeat center bottom;
+            background-size: cover; position: relative;}
+        .intro {width: 100%; height: 100%; margin-top:3px;}
+        .intro > .intro_board {
+            width: 310px; height: 458px; background: url("images/wood.png") no-repeat;
+            position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+        }
+        .intro > .intro_board > .box {width: 310px; height: 458px; position: relative;}
+        .intro > .intro_board > .box > .box_wrap {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+        .intro > .intro_board > .box h2 {
+            font-size: 30px; font-family: impact; color: #fff; margin-bottom: 30px; text-align: center;
+            font-family: "맑은 고딕";
+        }
+        .intro > .intro_board > .box .info {
+            font-size: 15px; text-align: center; color: #fff; margin-bottom: 40px; line-height: 2em;
+            font-family: "맑은 고딕";
+        }
+        .intro > .intro_board > .box .start {
+            width: 85px; height: 30px; text-indent: -99999px; border: 0px;
+            background:transparent url("images/start2.png"); margin: 0 auto; display: block;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <section class="intro">
+        <div class="intro_board">
+            <div class="box">
+                <div class="box_wrap">
+                    <h2>게임설명</h2>
+                    <p class="info">
+                        시간 안에 눈 앞에 <br>
+                        나타나는 새들을 사격하여 <br>
+                        높은 점수를 획득하세요.
+                    </p>
+                <button type="button" class="start">start</button>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+</body>
+</html>

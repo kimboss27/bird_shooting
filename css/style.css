@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body, section, h1, button {margin: 0; padding: 0;}
+html, body {width: 100%; height: 100%;}
+body {margin-top: 5px; overflow: hidden;}
+section.play, section.end{
+    background: url("../images/game2bg.jpg") no-repeat center bottom;
+    background-size: cover; position: relative; width: 100%; height: 100%;
+}
+.play {width: 100%; height: 100%;}
+.play > .board {position: relative; width: 301px; height: 95px; margin: 0 auto;}
+.play > .board > p {
+    position: absolute; top: 29%; font-size: 20px; font-family: impact;
+    font-weight: bold; color: #fff; display: inline-block; 
+}
+.play > .board > .time {left: 24%;}
+.play > .board > .second {left: 44%;}
+.play > .board > .bird {left: 57%;}
+.play > .board > .num {left: 77%;}
+
+.play > .play_wrap {
+    width: 300px; height: 300px; position: absolute; left: 50%; top: 25%; transform: translateX(-50%);
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+    align-content: space-between;
+}
+.play > .play_wrap > div {width: 78px; height: 72px; flex: 0;}
+.play > .play_wrap > div > .bird {width: 78px; height: 72px;}
+.play > .play_wrap > div > .bird > img {width: 100%; height: 100%; display: none;}
+.play > .gun {
+    width: 150px; height: 285px; position: absolute;
+    left: 80px; bottom: -120px;
+}
+.play > .gun > img {width: 100%; height: 100%;}
+.end {display: none;}
+.end > .end_board {
+    width: 310px; height: 458px; background: url("../images/wood.png") no-repeat;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+.end > .end_board > .box {width: 310px; height: 458px; position: relative;}
+.end > .end_board > .box > .box_wrap {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.end > .end_board > .box h2 {
+    font-size: 34px; font-family: impact; color: #fff; margin-bottom: 50px; text-align: center;
+}
+.end > .end_board > .box .score {
+    margin-bottom: 50px; text-align: center; font-size: 32px; color: #fff; font-family: impact;
+}
+.end > .end_board > .box .again {
+    width: 83px; height: 42px; text-indent: -99999px; border: 0px; background-size: contain !important;
+    background:transparent url("../images/again2.png") no-repeat; margin: 0 auto; display: block;
+}
