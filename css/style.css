@@ -3,6 +3,9 @@
 body, section, h1, button {margin: 0; padding: 0;}
 html, body {width: 100%; height: 100%;}
 body {margin-top: 5px; overflow: hidden;}
+section {
+    max-width: 390px; height: 100%; margin: 3px auto 0;
+}
 section.play, section.end{
     background: url("../images/game2bg.jpg") no-repeat center bottom;
     background-size: cover; position: relative; width: 100%; height: 100%;
